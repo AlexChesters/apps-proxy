@@ -4,7 +4,7 @@ services:
     image: arm64v8/nginx
     container_name: proxy
     volumes:
-      - proxy_nginx_conf:/etc/nginx
+      - nginx_conf:/etc/nginx
 
 volumes:
   nginx_conf:
