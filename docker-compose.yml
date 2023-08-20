@@ -5,6 +5,7 @@ services:
     container_name: proxy
     volumes:
       - nginx_conf:/etc/nginx
+      - ./nginx_conf:/etc/nginx/nginx.conf
 
 volumes:
   nginx_conf:
