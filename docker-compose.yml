@@ -3,6 +3,7 @@ services:
   nginx:
     image: arm64v8/nginx
     container_name: proxy
+    restart: unless-stopped
     volumes:
       - nginx_conf:/etc/nginx
       - ./nginx.conf:/etc/nginx/nginx.conf
