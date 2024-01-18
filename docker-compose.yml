@@ -8,8 +8,7 @@ services:
       - nginx_conf:/etc/nginx
       - ./nginx.conf:/etc/nginx/nginx.conf
     ports:
-      - 443:443
-      - 10000-10021:10000-10021
+      - 10000-10015:10000-10015
 
 volumes:
   nginx_conf:
